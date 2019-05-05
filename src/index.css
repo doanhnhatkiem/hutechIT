@@ -1,14 +1,438 @@
+*{
+  outline: none;
+  font-family: 'Times New Roman', Times, serif;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:rgb(255, 255, 255);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+#bg{
+  background: url('https://www.hutech.edu.vn/imgnews/homepage/stories/hinh34/logo%20CMYK-01.png');
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 1px 4px 10px rgb(207, 207, 207);
+  margin-bottom: 24px;
+}
+#root{
+  position: relative;
+}
+.bodycontent{
+  position: relative;
+}
+#bg1{
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  background: url('https://www.hutech.edu.vn/img/slider/banner_web24_nam_hutech-1554784646.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 0;
+  top:0;
+}
+#particles-js{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background:rgb(255, 255, 255);
+  /* background: #a8a8a8; */
+  /* background: linear-gradient(45deg,rgb(0, 114, 207),rgb(7, 185, 255)); */
+}
+#footer{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: red;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 98, 255); 
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #001e62; 
+}
+
+.table-warp{
+  position: relative;
+  top:50px;
+}
+
+.table-warp table{
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 16px;
+   overflow: hidden;
+   border: none;
+   box-shadow: 1px 1px 30px black;
+}
+.table-warp table thead tr th{
+  border-bottom: 2px solid rgb(0, 174, 255);
+  border-top: 2px solid rgb(0, 174, 255);
+  background: linear-gradient(45deg,rgb(3, 159, 231),rgb(0, 174, 255),rgb(3, 159, 231));
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.table-warp table tbody tr td{
+    border-bottom: 2px solid rgb(0, 174, 255);
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.buttonedit{
+  cursor: pointer;
+  border: none;
+  background: rgb(0, 122, 179);
+  font-weight: bold;
+  color: white;
+  margin:0 8px;
+  padding: 8px 16px;
+  transition: 1s;
+  text-transform: uppercase;
+}
+
+.buttonedit:hover{
+  transition: 1s;
+  background: rgb(8, 149, 214);
+}
+
+.buttonreport{
+  cursor: pointer;
+  border: none;
+  background: rgb(200, 8, 24);
+  font-weight: bold;
+  color: white;
+  margin:0 8px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+}
+
+.buttonreport:hover{
+  transition: 1s;
+  background: rgb(223, 7, 25);
+}
+
+
+.popup-update{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.popup-update form{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  padding: 8px 24px;
+  border: 5px solid rgb(21, 122, 255);
+  box-shadow: 1px 1px 40px black;
+  background:white;
+  border-radius: 4px;
+  transform: translate(-50%,-50%);
+}
+
+.popup-update .choose{
+  width: 500px;
+  height: 300px;
+}
+.choosebtn{
+  display: flex;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+.logo{
+  width: 100%;
+  height: 150px;
+  background: rgb(255, 255, 255);
+  border: 5px solid rgb(21, 122, 255);
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+}
+.ptitle{
+  display: flex;
+  justify-content: center;
+  background: rgb(21, 122, 255);
+  padding: 24px 0;
+  transform: translateY(-100%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+  box-shadow: 1px 1px 20px black;
+}
+
+.text{
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  margin-right: 16px;
+  color: rgb(21, 122, 255);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 4px 0px;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+.text.sm{
+  width: 170px;
+}
+.icon{
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 122, 179);
+}
+.icon.sm{
+  font-size: 16px;
+  width: 10px;
+  margin: 0 8px;
+  color: white;
+}
+.icon.sm1{
+  font-size: 16px;
+  width: 10px;
+  color: red;
+}
+.icon.sm2{
+  font-size: 14px;
+  width: 10px;
+  color: white;
+  transform: translateX(-30%);
+}
+.closereport{
+  position: absolute;
+  cursor: pointer;
+  font-weight: bold;
+  right: 4px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: transparent;
+}
+.input{
+  outline: none;
+  border: none;
+  border: 1px solid rgb(0, 122, 179);
+  width: 60%;
+  padding: 4px;
+  font-size: 16px;
+  background: transparent;
+  text-align: center;
+  border-radius: 100px;
+}
+.input.sm{
+  width: 40%;
+  margin-left: 16px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 4px 0 4px 16px;
+}
+.search{
+  background: rgb(255, 255, 255);
+  width: 100px;
+  height: 20px;
+  background:  red;
+  border: none;
+  cursor: pointer;
+  transform: translate(-110%,-5%);
+  border-radius: 100px;
+}
+.search:hover{
+  transition: 1s;
+  background: rgb(173, 0, 0);
+}
+.mr{
+  display: inline-block;
+  margin-right: 24px;
+  margin-bottom: 8px;
+
+}
+.cltxt{
+  color: rgb(173, 0, 0);
+}
+.ml1{
+  margin-left: 24px;
+}
+.weektext{
+  display: inline-block;
+  width: 150px;
+  margin-right: 16px;
+  color: rgb(0, 122, 179);
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.weektext-2{
+  display: inline-block;
+  width: 150px;
+  margin-right: 14px;
+  font-weight: bold;
+  background:rgb(0, 122, 179);
+  color: white;
+  margin-bottom: 16px;
+  text-align: center;
+  padding: 4px 16px;
+}
+
+.marginbottom{
+  margin-bottom: 24px;
+}
+.buttonwrap{
+  margin-top:32px;
+  display: flex;
+  justify-content: center;
+}
+.buttonwrap-1{
+  display: flex;
+  justify-content: start;
+}
+.report{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+}
+.reportwrap{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 24px;
+  padding: 8px 16px;
+  max-width: 1000px;
+  overflow-x: auto;
+  background: white;
+  border: 5px solid rgb(0, 122, 179);
+  box-shadow: 1px 1px 30px black;
+}
+.flex{
+  display: flex;
+}
+.week{
+  margin: 4px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgb(0, 122, 179);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.week.active{
+  background: rgb(182, 2, 2);
+}
+
+.textarea{
+  border: 2px solid rgb(0, 122, 179);
+  padding: 8px;
+  width: 80%;
+  height: 100px;
+}
+
+.margin-chung{
+  position: relative;
+  top:8px;
+  left: 8px;
+}
+
+.tablewrap{
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: rgb(230, 230, 230);
+  top:0;
+  left: 0;
+}
+
+.w-h-100{
+  width: 100%;
+  height: 100%;
+}
+
+.contentwrap{
+  margin-top: 100px;
+  padding: 16px;
+  background: rgb(255, 255, 255);
+}
+.p{
+  padding: 16px;
+  border: 2px solid rgb(0, 122, 179);
+  margin-bottom: 0;
+}
+.margin-top-20px{
+  margin-top:50px;
+}
+.margin-y{
+  margin-bottom: 8px;
+}
+.margin-top-8px{
+  margin: 8px 0;
+}
+.margin-top{
+  margin-top: 80px;
+}
+
+
+.table{
+  position: relative;
+  border: 1px solid rgb(0, 122, 179);
+  overflow: hidden; 
+}
+.table .thead .tr .th{
+ background: rgb(0, 122, 179);
+  color: white;
+ padding: 8px 16px;
+ text-align: center;
+ width: 300px; 
+ max-width: 300px;
+}
+
+.table .tbody .tr .td{
+   padding: 8px 16px;
+   text-align: center;
+}
+
+.ds{
+  font-size: 70px;
+  text-align: center;
+  color: rgb(182, 2, 2);;
 }
