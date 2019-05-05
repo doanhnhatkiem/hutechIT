@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hutechIT/static/css/main.fd3270c8.chunk.css",
+    "main.js": "/hutechIT/static/js/main.886e22a6.chunk.js",
+    "main.js.map": "/hutechIT/static/js/main.886e22a6.chunk.js.map",
+    "runtime~main.js": "/hutechIT/static/js/runtime~main.84b1624e.js",
+    "runtime~main.js.map": "/hutechIT/static/js/runtime~main.84b1624e.js.map",
+    "static/js/2.cba05053.chunk.js": "/hutechIT/static/js/2.cba05053.chunk.js",
+    "static/js/2.cba05053.chunk.js.map": "/hutechIT/static/js/2.cba05053.chunk.js.map",
+    "index.html": "/hutechIT/index.html",
+    "precache-manifest.b5e0bf6575bc3197e8db2e9a707f7b48.js": "/hutechIT/precache-manifest.b5e0bf6575bc3197e8db2e9a707f7b48.js",
+    "service-worker.js": "/hutechIT/service-worker.js",
+    "static/css/main.fd3270c8.chunk.css.map": "/hutechIT/static/css/main.fd3270c8.chunk.css.map"
+  }
+}
